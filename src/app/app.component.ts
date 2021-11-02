@@ -10,6 +10,7 @@ export class AppComponent implements OnInit, OnDestroy {
   showText: Boolean = false;
   todaysDate = new Date();
   itemImageUrl = '../assets/aurora-borealis.jpeg';
+  fontSizepx: number = 16;
 
   ngOnInit() {
     this.intervalSub = setInterval(() => {
@@ -35,4 +36,13 @@ export class AppComponent implements OnInit, OnDestroy {
   /* The context of a template statement can be the component class instance,
   or the template. Becaouse of this, template statements can't refer
   to anything in the global namespace, such 'window' or 'document'*/
+
+
+  // bind to a custom event
+  deleteItem(item: any) {
+    console.log(item);
+
+  }
+
+  // two way binding: components can share data syntax("banana-in-a-box): [()]
 }

@@ -9,6 +9,8 @@ import { HelloWorldComponent } from './hello-world.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { GreetingsPipePipe } from './greetings-pipe.pipe';
+import { ItemDetailsComponent } from './item-details/item-details.component';
+import { AppSizerComponent } from './app-sizer/app-sizer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { GreetingsPipePipe } from './greetings-pipe.pipe';
     HelloWorldComponent,
     ParentComponent,
     ChildComponent,
-    GreetingsPipePipe
+    GreetingsPipePipe,
+    ItemDetailsComponent,
+    AppSizerComponent
   ],
   imports: [
     BrowserModule,

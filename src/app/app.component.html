@@ -14,6 +14,13 @@
     boolean or symbol, or a change in an object reference, such as date,
     array, function or object) -->
   <h2>{{ "Aki" | greetingsPipe }}</h2>
+
+
+<app-item-details (deleteRequest)="deleteItem($event)"></app-item-details>
+
+
+  <app-sizer [(size)]="fontSizepx"></app-sizer>
+  <div [style.font-size.px]="fontSizepx">Resizable text from app component</div>
 </app-child>
 
 <!-- Prop binding. This one is recomended, but when you don't have a property to bind,
