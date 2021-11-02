@@ -7,9 +7,10 @@
   <button (click)="toggleText($event)">Toggle text</button>
   <p>{{ showText }}</p>
   <br />
-  <p>{{ todaysDate | date: 'EEEE MMMM d y' | uppercase }}</p>
+  <p>{{ todaysDate | date: "EEEE MMMM d y" | uppercase }}</p>
   <!-- Pipes are only executed when pure changes are detected
     (a change of a primitive input value such as string, number,
     boolean or symbol, or a change in an object reference, such as date,
     array, function or object) -->
+  <h2>{{ "Aki" | greetingsPipe }}</h2>
 </app-child>
