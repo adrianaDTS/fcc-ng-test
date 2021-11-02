@@ -1,0 +1,44 @@
+/* Use the :host psuedo-class selector to target styles in the element
+that host the component as opposite to target elements inside the component's
+template */
+:host {
+  border: 4px solid #fabada;
+  border-radius: 6px;
+  display: block;
+}
+
+/* We can style host' styles with a given selector by using the function form
+as the following: */
+:host(.active) {
+  border: 8px solid #ff2b95;
+  border-radius: 10px;
+}
+
+/* Sometimes is useful to apply styles based on some condition outside of the component view.
+e.g: a CSS theme class can be applied to the document body element, and you want to change how
+the component looks based on that */
+/* In this case, all h2 elements inside the component will use this style only if
+ancestor element has the CSS class "theme-light" */
+:host-context(.theme-light) button {
+  background-color: #fabada;
+  border-radius: 6px;
+  border: darkcyan 4px solid;
+  appearance: none;
+  padding: 10px;
+  margin: 10px;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+:host-context(.theme-light) button:hover {
+  background-color: #8f064a;
+  color: white;
+}
+
+:host-context(.theme-light) h2 {
+  background-color: #f8e6ef;
+  border-radius: 6px;
+  border: rgb(26, 48, 48) 6px solid;
+  padding: 10px;
+  margin: 10px;
+}

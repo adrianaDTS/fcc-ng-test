@@ -1,0 +1,13 @@
+<h2>Holi, ancestor</h2>
+<button (click)="sendMessage()">
+  Send message from Child {{ childMessage }}
+</button>
+
+<h2>Hello from child</h2>
+
+<!-- <ng-content> is used anytime you want to inject any kind of HTML into a component.
+ng-content is a placeholder that doesn't create a real DOM element. Each component can have multiple slots.
+Each one can specify a CSS selector that determines with content goes into that slot
+(multi-slot content projection) -->
+<ng-content [question]></ng-content>
+<ng-content [answer]></ng-content>

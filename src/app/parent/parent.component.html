@@ -1,0 +1,7 @@
+<!-- <app-child [childMessage]="'Vengo del template del Parent'"></app-child> -->
+
+<app-child (messageEvent)="receiveMessage($event)"></app-child>
+
+<div class="theme-light">
+  <app-child class="active"></app-child>
+</div>
