@@ -9,6 +9,7 @@ export class AppComponent implements OnInit, OnDestroy {
   intervalSub: any;
   showText: Boolean = false;
   todaysDate = new Date();
+  itemImageUrl = '../assets/aurora-borealis.jpeg';
 
   ngOnInit() {
     this.intervalSub = setInterval(() => {

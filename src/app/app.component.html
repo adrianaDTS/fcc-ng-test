@@ -8,9 +8,17 @@
   <p>{{ showText }}</p>
   <br />
   <p>{{ todaysDate | date: "EEEE MMMM d y" | uppercase }}</p>
+  <br />
   <!-- Pipes are only executed when pure changes are detected
     (a change of a primitive input value such as string, number,
     boolean or symbol, or a change in an object reference, such as date,
     array, function or object) -->
   <h2>{{ "Aki" | greetingsPipe }}</h2>
 </app-child>
+
+<!-- Prop binding. This one is recomended, but when you don't have a property to bind,
+you can use attribute binding (syntax: [attr.attribute-you-are-targeting]="expression") -->
+<img class="bg-binding-image" [src]="itemImageUrl" />
+
+<!-- Interpolation -->
+<img class="bg-interpolation-image" src="{{ itemImageUrl }}" />
