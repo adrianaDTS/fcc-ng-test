@@ -22,6 +22,10 @@ export class ChildComponent implements OnInit {
     this.messageEvent.emit('Vengo del method \'sendMessage\' en el Child');
   }
 
+  onSave() {
+    console.log('Click on SAVE');
+  }
+
 }
 
 
