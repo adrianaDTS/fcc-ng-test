@@ -44,5 +44,7 @@ export class AppComponent implements OnInit, OnDestroy {
 
   }
 
-  // two way binding: components can share data syntax("banana-in-a-box): [()]
+  // two way binding: components can share data; syntax("banana-in-a-box"): [()]
+  // property binding: []
+  // event binding: ()
 }
