@@ -7,7 +7,7 @@ import { ChildComponent } from '../child/child.component';
   styleUrls: ['./parent.component.scss']
 })
 export class ParentComponent implements OnInit {
-  @ViewChild(ChildComponent) child: any;
+  // @ViewChild(ChildComponent) child: any;
 
   constructor() { }
 
@@ -18,8 +18,8 @@ export class ParentComponent implements OnInit {
     alert(msg);
   }
 
-  ngAfterViewInit() {
-    alert(this.child.message);
-  }
+  // ngAfterViewInit() {
+  //   alert(this.child.message);
+  // }
 
 }

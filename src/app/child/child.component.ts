@@ -9,7 +9,7 @@ export class ChildComponent implements OnInit {
   @Input() childMessage: string;
   @Output() messageEvent = new EventEmitter;
 
-  message: string = 'Message from child through ViewChild';
+  // message: string = 'Message from child through ViewChild';
 
   constructor() {
     this.childMessage = '(Texto que viene del constructor del Child)';

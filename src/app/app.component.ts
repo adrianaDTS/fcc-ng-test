@@ -11,6 +11,7 @@ export class AppComponent implements OnInit, OnDestroy {
   todaysDate = new Date();
   itemImageUrl = '../assets/aurora-borealis.jpeg';
   fontSizepx: number = 16;
+  firstExample = '🙀😅🤷🏻‍♀️';
 
   ngOnInit() {
     this.intervalSub = setInterval(() => {
@@ -26,7 +27,7 @@ export class AppComponent implements OnInit, OnDestroy {
     }
   }
 
-  /*Passing arguments in the methods can be very useful when submitting forms
+  /* Passing arguments in the methods can be very useful when submitting forms
   or looping through arrays, and you need to access a specific element  */
   toggleText(event: any): void {
     this.showText = !this.showText;
@@ -47,4 +48,9 @@ export class AppComponent implements OnInit, OnDestroy {
   // two way binding: components can share data; syntax("banana-in-a-box"): [()]
   // property binding: []
   // event binding: ()
+
+  callPhone(phone: string) {
+    console.log(phone);
+
+  }
 }
