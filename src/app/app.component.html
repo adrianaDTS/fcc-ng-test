@@ -1,11 +1,25 @@
 <app-hello-world></app-hello-world>
-<app-parent></app-parent>
+
+<app-child>
+  <div class="section">
+    <h2 [appHighlight]="'#fabada'">Angular routing</h2>
+    <nav>
+      <ul>
+        <li><a routerLink="/first-page/1">First page</a></li>
+        <li><a routerLink="/second-page">Second page</a></li>
+      </ul>
+    </nav>
+  </div>
+</app-child>
+<!-- This component informs Angular to update the application view with the
+  component for the selected route -->
+<router-outlet></router-outlet>
 <app-child>
   <!-- <h3 question>Is this ng content cool?</h3>
   <p answer>Yes, it is!</p>
   <h2>Hello from root</h2> -->
   <div class="section">
-    <h2></h2>
+    <h2 [appHighlight]="'#fabada'">Toggle event</h2>
     <button (click)="toggleText($event)">Toggle text</button>
     <p>{{ showText }}</p>
   </div>

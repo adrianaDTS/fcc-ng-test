@@ -1,0 +1,16 @@
+.section {
+  display: block;
+  border: 2px teal solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #ff47e023;
+
+  input {
+    margin-right: 10px;
+
+    &::placeholder {
+      color: #3d07349d;
+    }
+  }
+}

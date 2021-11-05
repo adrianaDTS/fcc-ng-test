@@ -1,6 +1,9 @@
 import { Component, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { LogService } from './log.service';
 
+
+/* Often you want to pass information from one component to another.
+To do so you use the Activated Route Interface  */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

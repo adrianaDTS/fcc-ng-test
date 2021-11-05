@@ -15,6 +15,10 @@ import { AppSizerComponent } from './app-sizer/app-sizer.component';
 import { HighlightDirective } from './highlight.directive';
 import { LogService } from './log.service';
 import { FirstPageComponent } from './first-page/first-page.component';
+import { SecondPageComponent } from './second-page/second-page.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+import { ChildAComponent } from './child-a/child-a.component';
+import { ChildBComponent } from './child-b/child-b.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { FirstPageComponent } from './first-page/first-page.component';
     ItemDetailsComponent,
     AppSizerComponent,
     HighlightDirective,
-    FirstPageComponent
+    FirstPageComponent,
+    SecondPageComponent,
+    ErrorPageComponent,
+    ChildAComponent,
+    ChildBComponent
   ],
   imports: [
     BrowserModule,
