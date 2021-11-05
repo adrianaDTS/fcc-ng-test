@@ -1,4 +1,5 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
+import { LogService } from './log.service';
 
 @Component({
   selector: 'app-root',
@@ -13,10 +14,19 @@ export class AppComponent implements OnInit, OnDestroy {
   fontSizepx: number = 16;
   firstExample = '🙀😅🤷🏻‍♀️';
 
+  constructor(
+    private logService: LogService,
+    private renderer: Renderer2,
+    private host: ElementRef,
+  ) { }
+
   ngOnInit() {
     this.intervalSub = setInterval(() => {
       // console.log('Hello from ngOnInit');
     }, 1000);
+
+    this.logService.logMessage('Holi from service');
+    this.renderer.setStyle(this.host.nativeElement, 'color', 'teal');
   }
 
   ngOnDestroy() {
