@@ -10,7 +10,7 @@
     <p>{{ showText }}</p>
   </div>
   <div class="section">
-    <h2>Pipes</h2>
+    <h2 [appHighlight]="'#fabada'">Pipes</h2>
     <h3>{{ "Aki" | greetingsPipe }}</h3>
     <p>{{ todaysDate | date: "EEEE MMMM d y" | uppercase }}</p>
   </div>
@@ -24,14 +24,14 @@
   </div>
 
   <div class="section">
-    <h2>App sizer</h2>
+    <h2 [appHighlight]="'yellow'">App sizer</h2>
     <app-sizer [(size)]="fontSizepx"></app-sizer>
     <div [style.font-size.px]="fontSizepx">
       Resizable text from app component
     </div>
   </div>
   <div class="section">
-    <h2>Template variables</h2>
+    <h2 [appHighlight]="'purple'">Template variables</h2>
     <input type="text" placeholder="Phone" #phone />
     <button (click)="callPhone(phone.value)">Call</button>
     <br />
